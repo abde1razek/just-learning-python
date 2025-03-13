@@ -21,7 +21,6 @@ newgame()
 
 while not game_over:
     guess = input("Guess a letter? ").lower()
-
     if guess in secretword:
         for position in range(len(secretword)):
             if secretword[position] == guess:
